@@ -1,0 +1,17 @@
+h1{
+    text-align: center;
+    color:aqua
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2{
+    text-decoration: dotted;
+    color:darkblue;
+}
+
+ul{
+    line-height: 2;
+}

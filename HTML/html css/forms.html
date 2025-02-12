@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms Demo</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+    <form action="/tacos">
+        <p>
+            <label for="Username">Enter Your Username:-</label>
+            <input id="Username" type="text" placeholder="Username">
+        </p>
+        <p>
+            <label for="Password">Enter Your Password:-</label>
+            <input id="Password" type="Password" placeholder="Password">
+        </p>
+        <p>
+            <label for="Color">Enter Your Color:-</label>
+            <input type="color" id="Color">
+        </p>
+        <p>
+            <!--Alternative Way To label An Input (less Common)-->
+            <label>
+                Enter a Number:-
+                <input type="Number" placeholder="Enter a Number">
+            </label>
+        </p>
+        <!--This Buuton Submits The Form-->
+        <button>Submit</button>
+        <!--So does this one-->
+        <input type="submit" value="Click Me!">
+    </form>
+    <h2>Hijacking Search</h2>
+    <h3>Google Search</h3>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+    <h3>You Tube Search</h3>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>You Tube</button>
+    </form>
+    <h2>More Inputs!</h2>
+    <form action="/birds">
+        <input type="Checkbox" name="agree_tos" id="agree">
+        <label for="agree">Everything</label>
+        <p>
+            <lable for="XS">XS</lable>
+            <input type="radio" name="Size" id="xs" value="XS">
+            <lable for="S">S</lable>
+            <input type="radio" name="Size" id="s" value="S">
+            <lable for="M">M</lable>
+            <input type="radio" name="Size" id="M" value="M">
+        </p>
+        <p>
+            <label for="meal">Please select an entry</label>
+            <select name="meal" id="meal">
+                <option value="">--please select--</option>
+                <option value="veg">vegetarian</option>
+                <option value="Non-Veg">meat</option>
+            </select>
+        </p>
+        <p>
+            <label for="cheese">amount of cheese</label>
+            <input type="range" id="cheese" min="1" max="10" name="cheese_level">
+        </p>
+        <p>
+            <label for="request">Any Special Requests?</label>
+            <br>
+            <textarea name="Requests?" id="requests" rows="10" cols="40" placeholder="Write Something"></textarea>
+        </p>
+        <button>Submit</button>
+    </form>
+    <h2>Validation Demo</h2>
+    <form action="/demo">
+        <label for="first">Enter first name</label>
+        <input type="text" id="first" name="first" required>
+        <p>
+        <label for="username">Enter a Username</label>
+        <input type="text" id="username" name="username" minlength="4" maxlength="12">
+       </p>
+        <p>
+            <label for="email">Enter a email</label>
+            <input type="email" id="email"  name="email" required>
+        </p>
+        <p>
+            <input type="url">
+        </p>
+         <button>Submit</button>
+
+    </form>
+
+</body>
+
+</html>
